@@ -14,9 +14,9 @@ on:
 
 env:
   MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni -b twrp-10.0-deprecated
-  DEVICE: KD7
-  DT_LINK: https://github.com/mastersenpai0405/recovery_device_tecno_KD7
-  DT_PATH: device/tecno/KD7
+  DEVICE: P820F037
+  DT_LINK: https://github.com/twrpdtgen/android_device_zte_P820F03
+  DT_PATH: device/zte/P820F03
   TARGET: recoveryimage
   TZ: Asia/manila
 
@@ -63,6 +63,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          with:
           tag_name: TWRP_10.0
-          name: TWRP-KD7
+          name: TWRP-P820F03
           files: | 
-            work/out/target/product/KD7/recovery.img
+            work/out/target/product/P820F03/recovery.img
